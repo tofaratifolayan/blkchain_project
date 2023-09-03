@@ -1,15 +1,3 @@
-# Basic Sample Hardhat Project
+Web 3.0 Blockchain site.
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+IN this web app you can trade ethereum through different account on the blockchain. The backend is Solidity, in which you add transactions to the blockchain using different calls. On client side, there is functionality to add your MetaMask wallet, make transfers and view your transfers with a GIF and datetime.
