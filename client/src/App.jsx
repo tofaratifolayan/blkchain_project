@@ -1,18 +1,22 @@
-import {Navbar, Welcome, Footer, Services, Transactions} from './components';
-import 'C:/Users/tofar/Desktop/blkchain_project/client/src/App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import HomePage from './pages/HomePage';
+import PianoPlayer from './pages/pianoPlayer';
+import BouncingBall from './pages/BouncingBall';
+import RandomColors from './pages/RandomColors';
+import NumberGuesser from './pages/NumberGuesser'
 
 const App = () => {
   return (
-    <div className="min-h-screen">
-      <div className="gradient-bg-welcome">
-        <Navbar />
-        <Welcome />      
-      </div>
-      <Services />
-      <Transactions />
-      <Footer />
-    </div>
+    <BrowserRouter>
+       <Routes>
+          <Route path='/' element={<HomePage/>}></Route>
+          {/* <Route path='/PianoPlayer' element={<PianoPlayer/>}></Route>
+          <Route path='/BouncingBall' element={<BouncingBall/>}></Route>
+          <Route path='/RandomColors' element={<RandomColors/>}></Route>
+          <Route path='/NumberGuesser' element={<NumberGuesser/>}></Route> */}
+        </Routes>
+    </BrowserRouter>
   );
 }
 
